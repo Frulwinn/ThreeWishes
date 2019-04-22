@@ -33,6 +33,8 @@ class WishDetailViewController: UIViewController {
     @IBOutlet weak var secondTextField: UITextField!
     @IBOutlet weak var thirdTextField: UITextField!
     
+    
+    
     @IBAction func save(_ sender: Any) {
         guard let name = nameTextField.text, !name.isEmpty,
             let firstChoice = firstTextField.text,

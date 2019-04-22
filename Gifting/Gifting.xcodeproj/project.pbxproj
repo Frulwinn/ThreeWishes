@@ -17,6 +17,7 @@
 		4800D675224044170041AF8B /* Person+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4800D674224044170041AF8B /* Person+Convenience.swift */; };
 		4800D677224051A00041AF8B /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4800D676224051A00041AF8B /* PersonController.swift */; };
 		4800D679224182AA0041AF8B /* Person+Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4800D678224182AA0041AF8B /* Person+Encodable.swift */; };
+		4802D979226E7CBE0025CC95 /* ChangeBuyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4802D978226E7CBE0025CC95 /* ChangeBuyButton.swift */; };
 		48841C6A2241907C00CA76D8 /* WishListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48841C692241907C00CA76D8 /* WishListTVC.swift */; };
 		48841C6C224190BC00CA76D8 /* WishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48841C6B224190BC00CA76D8 /* WishDetailViewController.swift */; };
 		48841C6E2241992B00CA76D8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48841C6D2241992B00CA76D8 /* TableViewCell.swift */; };
@@ -45,6 +46,7 @@
 		4800D676224051A00041AF8B /* PersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
 		4800D678224182AA0041AF8B /* Person+Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+Encodable.swift"; sourceTree = "<group>"; };
 		4802D974226E26940025CC95 /* Gifting 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Gifting 3.xcdatamodel"; sourceTree = "<group>"; };
+		4802D978226E7CBE0025CC95 /* ChangeBuyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeBuyButton.swift; sourceTree = "<group>"; };
 		48841C692241907C00CA76D8 /* WishListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListTVC.swift; sourceTree = "<group>"; };
 		48841C6B224190BC00CA76D8 /* WishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishDetailViewController.swift; sourceTree = "<group>"; };
 		48841C6D2241992B00CA76D8 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		4800D64A223FF6F80041AF8B = {
 			isa = PBXGroup;
 			children = (
+				4802D977226E7BB30025CC95 /* SubClass */,
 				4800D655223FF6F80041AF8B /* Gifting */,
 				4800D654223FF6F80041AF8B /* Products */,
 				B3C28F4FA55D858A33364B26 /* Pods */,
@@ -144,6 +147,14 @@
 				4800D672224042BF0041AF8B /* CoreDataStack.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		4802D977226E7BB30025CC95 /* SubClass */ = {
+			isa = PBXGroup;
+			children = (
+				4802D978226E7CBE0025CC95 /* ChangeBuyButton.swift */,
+			);
+			path = SubClass;
 			sourceTree = "<group>";
 		};
 		48841C7D2243170900CA76D8 /* UI */ = {
@@ -292,6 +303,7 @@
 			files = (
 				4800D66B2240072B0041AF8B /* PersonRepresentation.swift in Sources */,
 				48841C892245419000CA76D8 /* LaunchViewController.swift in Sources */,
+				4802D979226E7CBE0025CC95 /* ChangeBuyButton.swift in Sources */,
 				48841C7C224316EA00CA76D8 /* Color+Convenience.swift in Sources */,
 				4800D671224040C30041AF8B /* Gifting.xcdatamodeld in Sources */,
 				4800D679224182AA0041AF8B /* Person+Encodable.swift in Sources */,

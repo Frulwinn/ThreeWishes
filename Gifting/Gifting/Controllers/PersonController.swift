@@ -34,6 +34,7 @@ class PersonController {
         person.secondChoice = secondChoice
         person.thirdChoice = thirdChoice
         
+        
         put(person)
         saveToPersistentStore()
     }
