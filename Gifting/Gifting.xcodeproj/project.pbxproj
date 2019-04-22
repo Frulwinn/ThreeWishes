@@ -44,6 +44,7 @@
 		4800D674224044170041AF8B /* Person+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+Convenience.swift"; sourceTree = "<group>"; };
 		4800D676224051A00041AF8B /* PersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
 		4800D678224182AA0041AF8B /* Person+Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+Encodable.swift"; sourceTree = "<group>"; };
+		4802D974226E26940025CC95 /* Gifting 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Gifting 3.xcdatamodel"; sourceTree = "<group>"; };
 		48841C692241907C00CA76D8 /* WishListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListTVC.swift; sourceTree = "<group>"; };
 		48841C6B224190BC00CA76D8 /* WishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishDetailViewController.swift; sourceTree = "<group>"; };
 		48841C6D2241992B00CA76D8 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
@@ -510,10 +511,11 @@
 		4800D66F224040C30041AF8B /* Gifting.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				4802D974226E26940025CC95 /* Gifting 3.xcdatamodel */,
 				48841C722242968700CA76D8 /* Gifting 2.xcdatamodel */,
 				4800D670224040C30041AF8B /* Gifting.xcdatamodel */,
 			);
-			currentVersion = 48841C722242968700CA76D8 /* Gifting 2.xcdatamodel */;
+			currentVersion = 4802D974226E26940025CC95 /* Gifting 3.xcdatamodel */;
 			path = Gifting.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
