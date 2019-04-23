@@ -139,7 +139,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="hm7-C0-WOF"/>
                                                         </constraints>
-                                                        <state key="normal" title="Buy"/>
+                                                        <state key="normal" title="buy"/>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -160,7 +160,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="OWE-87-YWC"/>
                                                         </constraints>
-                                                        <state key="normal" title="Buy"/>
+                                                        <state key="normal" title="buy"/>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -181,7 +181,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="zpG-uS-DyX"/>
                                                         </constraints>
-                                                        <state key="normal" title="Buy"/>
+                                                        <state key="normal" title="buy"/>
                                                     </button>
                                                 </subviews>
                                             </stackView>

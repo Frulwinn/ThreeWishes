@@ -57,17 +57,17 @@ class WishDetailViewController: UIViewController {
     func setThemes() {
         
         //text field
-        nameTextField.font = Appearance.gillSansFont(with: .body, pointSize: 15)
-        birthdayTextField.font = Appearance.gillSansFont(with: .body, pointSize: 15)
-        firstTextField.font = Appearance.gillSansFont(with: .body, pointSize: 15)
-        secondTextField.font = Appearance.gillSansFont(with: .body, pointSize: 15)
-        thirdTextField.font = Appearance.gillSansFont(with: .body, pointSize: 15)
+        nameTextField.font = Appearance.gillSansFont(with: .body, pointSize: 18)
+        birthdayTextField.font = Appearance.gillSansFont(with: .body, pointSize: 18)
+        firstTextField.font = Appearance.gillSansFont(with: .body, pointSize: 18)
+        secondTextField.font = Appearance.gillSansFont(with: .body, pointSize: 18)
+        thirdTextField.font = Appearance.gillSansFont(with: .body, pointSize: 18)
 
         //labels
-        celebratingLabel.font = Appearance.gillSansFont(with: .body, pointSize: 20)
-        celebratingLabel.textColor = .deepRed
-        giftLabel.font = Appearance.gillSansFont(with: .body, pointSize: 20)
-        giftLabel.textColor = .deepRed
+        celebratingLabel.font = Appearance.gillSansFont(with: .body, pointSize: 18)
+        celebratingLabel.textColor = .cream
+        giftLabel.font = Appearance.gillSansFont(with: .body, pointSize: 18)
+        giftLabel.textColor = .cream
         
         //buttons
         Appearance.style(button: firstBuyButton)

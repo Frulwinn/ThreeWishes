@@ -35,7 +35,7 @@ enum Appearance {
     }
     
     static func style(button: UIButton) {
-        button.titleLabel?.font = Appearance.gillSansFont(with: .body, pointSize: 13)
+        button.titleLabel?.font = Appearance.gillSansFont(with: .body, pointSize: 17)
         
     }
 }

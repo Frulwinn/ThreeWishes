@@ -26,7 +26,7 @@ class ChangeBuyButton: UIButton {
         //layer.borderWidth
         //layer.borderColor
         //layer.cornerRadius = frame.size.height /2
-        setTitleColor(UIColor.deepRed, for: .normal)
+        setTitleColor(UIColor.brownRed, for: .normal)
         addTarget(self, action: #selector(ChangeBuyButton.buttonPressed), for: .touchUpInside)
     }
     
@@ -38,8 +38,8 @@ class ChangeBuyButton: UIButton {
         isBought = bool
         
         //let color = bool ? UIColor.deepRed : .clear
-        let title = bool ? "Bought" : "Buy"
-        let titleColor = bool ? UIColor.darkGray : UIColor.deepRed
+        let title = bool ? "bought" : "buy"
+        let titleColor = bool ? UIColor.cream : UIColor.brownRed
 
         
         setTitle(title, for: .normal)
