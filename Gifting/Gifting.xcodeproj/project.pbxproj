@@ -42,6 +42,13 @@
 			remoteGlobalIDString = 48399683226FA70B0027ADA4;
 			remoteInfo = GiftingWidget;
 		};
+		483996C1226FAA950027ADA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 483996BD226FAA950027ADA4 /* GiftingCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 483996B2226FAA5B0027ADA4;
+			remoteInfo = GiftingCore;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -81,6 +88,7 @@
 		48399687226FA70B0027ADA4 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		4839968A226FA70B0027ADA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		4839968C226FA70B0027ADA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		483996BD226FAA950027ADA4 /* GiftingCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GiftingCore.xcodeproj; path = GiftingCore/GiftingCore.xcodeproj; sourceTree = "<group>"; };
 		48841C692241907C00CA76D8 /* WishListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListTVC.swift; sourceTree = "<group>"; };
 		48841C6B224190BC00CA76D8 /* WishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishDetailViewController.swift; sourceTree = "<group>"; };
 		48841C6D2241992B00CA76D8 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
@@ -131,6 +139,7 @@
 				48399686226FA70B0027ADA4 /* GiftingWidget */,
 				4800D654223FF6F80041AF8B /* Products */,
 				B3C28F4FA55D858A33364B26 /* Pods */,
+				483996BD226FAA950027ADA4 /* GiftingCore.xcodeproj */,
 				1118405A01C72AB1433D3409 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -210,6 +219,14 @@
 				4839968C226FA70B0027ADA4 /* Info.plist */,
 			);
 			path = GiftingWidget;
+			sourceTree = "<group>";
+		};
+		483996BE226FAA950027ADA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				483996C2226FAA950027ADA4 /* GiftingCore.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		48841C7D2243170900CA76D8 /* UI */ = {
@@ -301,6 +318,12 @@
 			mainGroup = 4800D64A223FF6F80041AF8B;
 			productRefGroup = 4800D654223FF6F80041AF8B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 483996BE226FAA950027ADA4 /* Products */;
+					ProjectRef = 483996BD226FAA950027ADA4 /* GiftingCore.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4800D652223FF6F80041AF8B /* Gifting */,
@@ -308,6 +331,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		483996C2226FAA950027ADA4 /* GiftingCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GiftingCore.framework;
+			remoteRef = 483996C1226FAA950027ADA4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4800D651223FF6F80041AF8B /* Resources */ = {
