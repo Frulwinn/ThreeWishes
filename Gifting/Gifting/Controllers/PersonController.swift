@@ -18,8 +18,8 @@ class PersonController {
     let baseURL = URL(string: "https://gifting-437b5.firebaseio.com/")!
     
     //create
-    func createPerson(with name: String, birthday: Date, firstChoice: String?, secondChoice: String?, thirdChoice: String?, isBought: Bool?) -> Person {
-        let person = Person(name: name, birthday: birthday, firstChoice: firstChoice, secondChoice: secondChoice, thirdChoice: thirdChoice, isBought: isBought ?? false)
+    func createPerson(with name: String, birthday: Date, firstChoice: String?, secondChoice: String?, thirdChoice: String?, isBoughtFirst: Bool?, isBoughtSecond: Bool?, isBoughtThird: Bool?) -> Person {
+        let person = Person(name: name, birthday: birthday, firstChoice: firstChoice, secondChoice: secondChoice, thirdChoice: thirdChoice, isBoughtFirst: isBoughtFirst ?? false, isBoughtSecond: isBoughtSecond ?? false, isBoughtThird: isBoughtThird ?? false)
         
         saveToPersistentStore()
         put(person)
@@ -27,15 +27,16 @@ class PersonController {
     }
     
     //update
-    func update(_ person: Person, withName name: String, birthday: Date, firstChoice: String?, secondChoice: String?, thirdChoice: String?, isBought: Bool?) {
+    func update(_ person: Person, withName name: String, birthday: Date, firstChoice: String?, secondChoice: String?, thirdChoice: String?, isBoughtFirst: Bool?, isBoughtSecond: Bool?, isBoughtThird: Bool?) {
         person.name = name
         person.birthday = birthday
         person.firstChoice = firstChoice
         person.secondChoice = secondChoice
         person.thirdChoice = thirdChoice
-        person.isBought = isBought ?? false
-        
-        
+        person.isBoughtFirst = isBoughtFirst ?? false
+        person.isBoughtSecond = isBoughtSecond ?? false
+        person.isBoughtThird = isBoughtThird ?? false
+
         put(person)
         saveToPersistentStore()
     }
@@ -47,7 +48,10 @@ class PersonController {
         person.secondChoice = personRepresentation.secondChoice
         person.thirdChoice = personRepresentation.thirdChoice
         person.identifier = personRepresentation.identifier
-        person.isBought = personRepresentation.isBought ?? false
+        person.isBoughtFirst = personRepresentation.isBoughtFirst ?? false
+        person.isBoughtSecond = personRepresentation.isBoughtSecond ?? false
+        person.isBoughtThird = personRepresentation.isBoughtThird ?? false
+
     }
     
     
