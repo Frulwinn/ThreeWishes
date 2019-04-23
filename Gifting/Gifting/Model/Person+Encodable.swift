@@ -17,7 +17,9 @@ extension Person: Encodable {
         case secondChoice
         case thirdChoice
         case identifier
-        case isBought
+        case isBoughtFirst
+        case isBoughtSecond
+        case isBoughtThird
         
     }
     
@@ -30,6 +32,9 @@ extension Person: Encodable {
         try container.encode(secondChoice, forKey: .secondChoice)
         try container.encode(thirdChoice, forKey: .thirdChoice)
         try container.encode(identifier, forKey: .identifier)
-        try container.encodeIfPresent(isBought, forKey: .isBought)
+        try container.encode(isBoughtFirst, forKey: .isBoughtFirst)
+        try container.encode(isBoughtSecond, forKey: .isBoughtSecond)
+        try container.encode(isBoughtThird, forKey: .isBoughtThird)
+
     }
 }

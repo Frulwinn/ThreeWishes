@@ -18,8 +18,8 @@ class PersonController {
     let baseURL = URL(string: "https://gifting-437b5.firebaseio.com/")!
     
     //create
-    func createPerson(with name: String, birthday: Date, firstChoice: String?, secondChoice: String?, thirdChoice: String?) -> Person {
-        let person = Person(name: name, birthday: birthday, firstChoice: firstChoice, secondChoice: secondChoice, thirdChoice: thirdChoice)
+    func createPerson(with name: String, birthday: Date, firstChoice: String?, secondChoice: String?, thirdChoice: String?, isBought: Bool?) -> Person {
+        let person = Person(name: name, birthday: birthday, firstChoice: firstChoice, secondChoice: secondChoice, thirdChoice: thirdChoice, isBought: isBought ?? false)
         
         saveToPersistentStore()
         put(person)
@@ -27,12 +27,13 @@ class PersonController {
     }
     
     //update
-    func update(_ person: Person, withName name: String, birthday: Date, firstChoice: String?, secondChoice: String?, thirdChoice: String?) {
+    func update(_ person: Person, withName name: String, birthday: Date, firstChoice: String?, secondChoice: String?, thirdChoice: String?, isBought: Bool?) {
         person.name = name
         person.birthday = birthday
         person.firstChoice = firstChoice
         person.secondChoice = secondChoice
         person.thirdChoice = thirdChoice
+        person.isBought = isBought ?? false
         
         
         put(person)
@@ -46,6 +47,7 @@ class PersonController {
         person.secondChoice = personRepresentation.secondChoice
         person.thirdChoice = personRepresentation.thirdChoice
         person.identifier = personRepresentation.identifier
+        person.isBought = personRepresentation.isBought ?? false
     }
     
     

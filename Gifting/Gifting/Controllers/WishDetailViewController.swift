@@ -36,6 +36,25 @@ class WishDetailViewController: UIViewController {
     @IBOutlet weak var secondBuyButton: ChangeBuyButton!
     @IBOutlet weak var thirdBuyButton: ChangeBuyButton!
     
+    @IBAction func firstBuyButton(_ sender: Any) {
+        do {
+            let moc = CoreDataStack.shared.mainContext
+            try moc.save() // Save the task to the persistent store.
+        } catch {
+            NSLog("Error saving managed object context: \(error)")
+        }
+    }
+    
+    @IBAction func secondBuyButton(_ sender: Any) {
+        
+        
+    }
+    
+    @IBAction func thirdBuyButton(_ sender: Any) {
+        
+        
+    }
+    
     
     @IBAction func save(_ sender: Any) {
         guard let name = nameTextField.text, !name.isEmpty,
@@ -47,9 +66,9 @@ class WishDetailViewController: UIViewController {
         let date = self.dateFormatter.date(from: birthDay)!
         
         if let person = person {
-            personController?.update(person, withName: name, birthday: date, firstChoice: firstChoice, secondChoice: secondChoice, thirdChoice: thirdChoice)
+            personController?.update(person, withName: name, birthday: date, firstChoice: firstChoice, secondChoice: secondChoice, thirdChoice: thirdChoice, isBought: isBought)
         } else {
-            personController?.createPerson(with: name, birthday: date, firstChoice: firstChoice, secondChoice: secondChoice, thirdChoice: thirdChoice)
+            personController?.createPerson(with: name, birthday: date, firstChoice: firstChoice, secondChoice: secondChoice, thirdChoice: thirdChoice, isBought: isBought)
         }
         navigationController?.popViewController(animated: true)
     }

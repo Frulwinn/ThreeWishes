@@ -47,6 +47,7 @@
 		4800D678224182AA0041AF8B /* Person+Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+Encodable.swift"; sourceTree = "<group>"; };
 		4802D974226E26940025CC95 /* Gifting 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Gifting 3.xcdatamodel"; sourceTree = "<group>"; };
 		4802D978226E7CBE0025CC95 /* ChangeBuyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeBuyButton.swift; sourceTree = "<group>"; };
+		4802D97A226F71090025CC95 /* Gifting 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Gifting 4.xcdatamodel"; sourceTree = "<group>"; };
 		48841C692241907C00CA76D8 /* WishListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListTVC.swift; sourceTree = "<group>"; };
 		48841C6B224190BC00CA76D8 /* WishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishDetailViewController.swift; sourceTree = "<group>"; };
 		48841C6D2241992B00CA76D8 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
@@ -107,8 +108,8 @@
 				48841C822243E98100CA76D8 /* DateFormatter.swift */,
 				48841C7D2243170900CA76D8 /* UI */,
 				4800D66C2240073A0041AF8B /* Model */,
-				4800D66E224007B60041AF8B /* CoreData */,
 				4800D66D2240078A0041AF8B /* Controllers */,
+				4800D66E224007B60041AF8B /* CoreData */,
 				48841C6D2241992B00CA76D8 /* TableViewCell.swift */,
 				4800D65A223FF6F80041AF8B /* Main.storyboard */,
 				4800D65D223FF6FB0041AF8B /* Assets.xcassets */,
@@ -523,11 +524,12 @@
 		4800D66F224040C30041AF8B /* Gifting.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				4802D97A226F71090025CC95 /* Gifting 4.xcdatamodel */,
 				4802D974226E26940025CC95 /* Gifting 3.xcdatamodel */,
 				48841C722242968700CA76D8 /* Gifting 2.xcdatamodel */,
 				4800D670224040C30041AF8B /* Gifting.xcdatamodel */,
 			);
-			currentVersion = 4802D974226E26940025CC95 /* Gifting 3.xcdatamodel */;
+			currentVersion = 4802D97A226F71090025CC95 /* Gifting 4.xcdatamodel */;
 			path = Gifting.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

@@ -140,6 +140,9 @@
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="hm7-C0-WOF"/>
                                                         </constraints>
                                                         <state key="normal" title="buy"/>
+                                                        <connections>
+                                                            <action selector="firstBuyButton:" destination="ixt-1s-VSI" eventType="touchUpInside" id="uVN-vn-2F0"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -161,6 +164,9 @@
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="OWE-87-YWC"/>
                                                         </constraints>
                                                         <state key="normal" title="buy"/>
+                                                        <connections>
+                                                            <action selector="secondBuyButton:" destination="ixt-1s-VSI" eventType="touchUpInside" id="Q3F-a1-OHS"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -182,6 +188,9 @@
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="zpG-uS-DyX"/>
                                                         </constraints>
                                                         <state key="normal" title="buy"/>
+                                                        <connections>
+                                                            <action selector="thirdBuyButton:" destination="ixt-1s-VSI" eventType="touchUpInside" id="Nqo-Zs-rMk"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>

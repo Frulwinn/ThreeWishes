@@ -16,7 +16,9 @@ struct PersonRepresentation: Codable, Equatable {
     var secondChoice: String?
     var thirdChoice: String?
     var identifier: String
-    var isBought: Bool?
+    var isBoughtFirst: Bool?
+    var isBoughtSecond: Bool?
+    var isBoughtThird: Bool?
 }
 
 func ==(lhs: PersonRepresentation, rhs: Person) -> Bool {
@@ -26,8 +28,10 @@ func ==(lhs: PersonRepresentation, rhs: Person) -> Bool {
         rhs.secondChoice == lhs.secondChoice &&
         rhs.thirdChoice == lhs.thirdChoice &&
         rhs.identifier == lhs.identifier &&
-        rhs.isBought == lhs.isBought
-    
+        rhs.isBoughtFirst == lhs.isBoughtFirst &&
+        rhs.isBoughtSecond == lhs.isBoughtSecond &&
+        rhs.isBoughtThird == lhs.isBoughtThird
+
 }
 
 func ==(lhs: Person, rhs: PersonRepresentation) -> Bool {
