@@ -166,6 +166,15 @@ class WishDetailViewController: UIViewController {
         firstTextField.text = person.firstChoice
         secondTextField.text = person.secondChoice
         thirdTextField.text = person.thirdChoice
+        
+        let firstButtonText = person.isBoughtFirst ? "bought" : "buy"
+        firstBuyButton.setTitle(firstButtonText, for: .normal)
+        
+        let secondButtonText = person.isBoughtSecond ? "bought" : "buy"
+        secondBuyButton.setTitle(secondButtonText, for: .normal)
+        
+        let thirdButtonText = person.isBoughtThird ? "bought" : "buy"
+        thirdBuyButton.setTitle(thirdButtonText, for: .normal)
 
     }
 }
