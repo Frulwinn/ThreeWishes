@@ -33,4 +33,9 @@ enum Appearance {
         UITextField.appearance().layer.cornerRadius = 4
         UITextField.appearance().layer.borderColor = .none
     }
+    
+    static func style(button: UIButton) {
+        button.titleLabel?.font = Appearance.gillSansFont(with: .body, pointSize: 13)
+        
+    }
 }

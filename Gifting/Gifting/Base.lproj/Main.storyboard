@@ -218,10 +218,13 @@
                     <connections>
                         <outlet property="birthdayTextField" destination="ksz-Kg-kR6" id="F2O-6a-Rf1"/>
                         <outlet property="celebratingLabel" destination="LDf-js-afW" id="kM9-bb-3YC"/>
+                        <outlet property="firstBuyButton" destination="9td-1C-Ixs" id="Y3Q-ZS-Qe1"/>
                         <outlet property="firstTextField" destination="orn-e9-Vgr" id="cmI-7n-svw"/>
                         <outlet property="giftLabel" destination="adG-wX-Tjk" id="wJ7-n2-OhT"/>
                         <outlet property="nameTextField" destination="4l4-sN-0ac" id="pVF-pl-x7M"/>
+                        <outlet property="secondBuyButton" destination="AKL-PD-j2b" id="7Ax-qL-pwp"/>
                         <outlet property="secondTextField" destination="Ksv-fX-30B" id="lLn-zC-4j1"/>
+                        <outlet property="thirdBuyButton" destination="T5Q-EF-AgC" id="vM7-fO-6D2"/>
                         <outlet property="thirdTextField" destination="hqm-EW-QLu" id="dao-H4-PsZ"/>
                     </connections>
                 </viewController>

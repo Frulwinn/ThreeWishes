@@ -27,13 +27,12 @@ class PersonController {
     }
     
     //update
-    func update(_ person: Person, withName name: String, birthday: Date, firstChoice: String?, secondChoice: String?, thirdChoice: String?, isBought: Bool?) {
+    func update(_ person: Person, withName name: String, birthday: Date, firstChoice: String?, secondChoice: String?, thirdChoice: String?) {
         person.name = name
         person.birthday = birthday
         person.firstChoice = firstChoice
         person.secondChoice = secondChoice
         person.thirdChoice = thirdChoice
-        person.isBought = isBought ?? false
         
         
         put(person)
@@ -47,8 +46,8 @@ class PersonController {
         person.secondChoice = personRepresentation.secondChoice
         person.thirdChoice = personRepresentation.thirdChoice
         person.identifier = personRepresentation.identifier
-        person.isBought = personRepresentation.isBought ?? false
     }
+    
     
     //save
     func saveToPersistentStore(context: NSManagedObjectContext = CoreDataStack.shared.mainContext) {

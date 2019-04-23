@@ -32,7 +32,9 @@ class WishDetailViewController: UIViewController {
     @IBOutlet weak var firstTextField: UITextField!
     @IBOutlet weak var secondTextField: UITextField!
     @IBOutlet weak var thirdTextField: UITextField!
-    
+    @IBOutlet weak var firstBuyButton: ChangeBuyButton!
+    @IBOutlet weak var secondBuyButton: ChangeBuyButton!
+    @IBOutlet weak var thirdBuyButton: ChangeBuyButton!
     
     
     @IBAction func save(_ sender: Any) {
@@ -60,13 +62,18 @@ class WishDetailViewController: UIViewController {
         firstTextField.font = Appearance.gillSansFont(with: .body, pointSize: 15)
         secondTextField.font = Appearance.gillSansFont(with: .body, pointSize: 15)
         thirdTextField.font = Appearance.gillSansFont(with: .body, pointSize: 15)
-        
+
         //labels
         celebratingLabel.font = Appearance.gillSansFont(with: .body, pointSize: 20)
         celebratingLabel.textColor = .deepRed
         giftLabel.font = Appearance.gillSansFont(with: .body, pointSize: 20)
         giftLabel.textColor = .deepRed
         
+        //buttons
+        Appearance.style(button: firstBuyButton)
+        Appearance.style(button: secondBuyButton)
+        Appearance.style(button: thirdBuyButton)
+
         //background
         view.backgroundColor = .deepRed
     }
