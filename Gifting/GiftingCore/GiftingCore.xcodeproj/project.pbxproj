@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		483996B7226FAA5B0027ADA4 /* GiftingCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 483996B5226FAA5B0027ADA4 /* GiftingCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		483996E8226FBC760027ADA4 /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483996E4226FBC760027ADA4 /* PersonController.swift */; };
+		483996E9226FBC760027ADA4 /* Person+Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483996E5226FBC760027ADA4 /* Person+Encodable.swift */; };
+		483996EA226FBC760027ADA4 /* PersonRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483996E6226FBC760027ADA4 /* PersonRepresentation.swift */; };
+		483996EB226FBC760027ADA4 /* Person+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483996E7226FBC760027ADA4 /* Person+Convenience.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		483996B2226FAA5B0027ADA4 /* GiftingCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GiftingCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		483996B5226FAA5B0027ADA4 /* GiftingCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GiftingCore.h; sourceTree = "<group>"; };
 		483996B6226FAA5B0027ADA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		483996E4226FBC760027ADA4 /* PersonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
+		483996E5226FBC760027ADA4 /* Person+Encodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Person+Encodable.swift"; sourceTree = "<group>"; };
+		483996E6226FBC760027ADA4 /* PersonRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonRepresentation.swift; sourceTree = "<group>"; };
+		483996E7226FBC760027ADA4 /* Person+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Person+Convenience.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +54,10 @@
 		483996B4226FAA5B0027ADA4 /* GiftingCore */ = {
 			isa = PBXGroup;
 			children = (
+				483996E6226FBC760027ADA4 /* PersonRepresentation.swift */,
+				483996E7226FBC760027ADA4 /* Person+Convenience.swift */,
+				483996E5226FBC760027ADA4 /* Person+Encodable.swift */,
+				483996E4226FBC760027ADA4 /* PersonController.swift */,
 				483996B5226FAA5B0027ADA4 /* GiftingCore.h */,
 				483996B6226FAA5B0027ADA4 /* Info.plist */,
 			);
@@ -130,6 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				483996EA226FBC760027ADA4 /* PersonRepresentation.swift in Sources */,
+				483996E9226FBC760027ADA4 /* Person+Encodable.swift in Sources */,
+				483996EB226FBC760027ADA4 /* Person+Convenience.swift in Sources */,
+				483996E8226FBC760027ADA4 /* PersonController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
