@@ -18,6 +18,10 @@
 		4800D677224051A00041AF8B /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4800D676224051A00041AF8B /* PersonController.swift */; };
 		4800D679224182AA0041AF8B /* Person+Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4800D678224182AA0041AF8B /* Person+Encodable.swift */; };
 		4802D979226E7CBE0025CC95 /* ChangeBuyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4802D978226E7CBE0025CC95 /* ChangeBuyButton.swift */; };
+		48399685226FA70B0027ADA4 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48399670226FA6CC0027ADA4 /* NotificationCenter.framework */; };
+		48399688226FA70B0027ADA4 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48399687226FA70B0027ADA4 /* TodayViewController.swift */; };
+		4839968B226FA70B0027ADA4 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48399689226FA70B0027ADA4 /* MainInterface.storyboard */; };
+		4839968F226FA70B0027ADA4 /* GiftingWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 48399684226FA70B0027ADA4 /* GiftingWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		48841C6A2241907C00CA76D8 /* WishListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48841C692241907C00CA76D8 /* WishListTVC.swift */; };
 		48841C6C224190BC00CA76D8 /* WishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48841C6B224190BC00CA76D8 /* WishDetailViewController.swift */; };
 		48841C6E2241992B00CA76D8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48841C6D2241992B00CA76D8 /* TableViewCell.swift */; };
@@ -29,6 +33,30 @@
 		48841C892245419000CA76D8 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48841C882245419000CA76D8 /* LaunchViewController.swift */; };
 		C6CAABAA5719459DB38FA0B3 /* Pods_Gifting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFC873E699323886282130B /* Pods_Gifting.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4839968D226FA70B0027ADA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4800D64B223FF6F80041AF8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48399683226FA70B0027ADA4;
+			remoteInfo = GiftingWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4839967F226FA6CC0027ADA4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4839968F226FA70B0027ADA4 /* GiftingWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2A79E1EE621BE7818DFE1035 /* Pods-Gifting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gifting.release.xcconfig"; path = "Target Support Files/Pods-Gifting/Pods-Gifting.release.xcconfig"; sourceTree = "<group>"; };
@@ -48,6 +76,11 @@
 		4802D974226E26940025CC95 /* Gifting 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Gifting 3.xcdatamodel"; sourceTree = "<group>"; };
 		4802D978226E7CBE0025CC95 /* ChangeBuyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeBuyButton.swift; sourceTree = "<group>"; };
 		4802D97A226F71090025CC95 /* Gifting 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Gifting 4.xcdatamodel"; sourceTree = "<group>"; };
+		48399670226FA6CC0027ADA4 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		48399684226FA70B0027ADA4 /* GiftingWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GiftingWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		48399687226FA70B0027ADA4 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		4839968A226FA70B0027ADA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		4839968C226FA70B0027ADA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48841C692241907C00CA76D8 /* WishListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListTVC.swift; sourceTree = "<group>"; };
 		48841C6B224190BC00CA76D8 /* WishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishDetailViewController.swift; sourceTree = "<group>"; };
 		48841C6D2241992B00CA76D8 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
@@ -70,6 +103,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		48399681226FA70B0027ADA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48399685226FA70B0027ADA4 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				4BFC873E699323886282130B /* Pods_Gifting.framework */,
+				48399670226FA6CC0027ADA4 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -86,6 +128,7 @@
 			children = (
 				4802D977226E7BB30025CC95 /* SubClass */,
 				4800D655223FF6F80041AF8B /* Gifting */,
+				48399686226FA70B0027ADA4 /* GiftingWidget */,
 				4800D654223FF6F80041AF8B /* Products */,
 				B3C28F4FA55D858A33364B26 /* Pods */,
 				1118405A01C72AB1433D3409 /* Frameworks */,
@@ -96,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				4800D653223FF6F80041AF8B /* Gifting.app */,
+				48399684226FA70B0027ADA4 /* GiftingWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,6 +202,16 @@
 			path = SubClass;
 			sourceTree = "<group>";
 		};
+		48399686226FA70B0027ADA4 /* GiftingWidget */ = {
+			isa = PBXGroup;
+			children = (
+				48399687226FA70B0027ADA4 /* TodayViewController.swift */,
+				48399689226FA70B0027ADA4 /* MainInterface.storyboard */,
+				4839968C226FA70B0027ADA4 /* Info.plist */,
+			);
+			path = GiftingWidget;
+			sourceTree = "<group>";
+		};
 		48841C7D2243170900CA76D8 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,15 +242,34 @@
 				4800D650223FF6F80041AF8B /* Frameworks */,
 				4800D651223FF6F80041AF8B /* Resources */,
 				C21426EB0D08B33B600D58A0 /* [CP] Embed Pods Frameworks */,
+				4839967F226FA6CC0027ADA4 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4839968E226FA70B0027ADA4 /* PBXTargetDependency */,
 			);
 			name = Gifting;
 			productName = Gifting;
 			productReference = 4800D653223FF6F80041AF8B /* Gifting.app */;
 			productType = "com.apple.product-type.application";
+		};
+		48399683226FA70B0027ADA4 /* GiftingWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48399690226FA70B0027ADA4 /* Build configuration list for PBXNativeTarget "GiftingWidget" */;
+			buildPhases = (
+				48399680226FA70B0027ADA4 /* Sources */,
+				48399681226FA70B0027ADA4 /* Frameworks */,
+				48399682226FA70B0027ADA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GiftingWidget;
+			productName = GiftingWidget;
+			productReference = 48399684226FA70B0027ADA4 /* GiftingWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -204,13 +277,16 @@
 		4800D64B223FF6F80041AF8B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Frulwinn;
 				TargetAttributes = {
 					4800D652223FF6F80041AF8B = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1020;
+					};
+					48399683226FA70B0027ADA4 = {
+						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
 			};
@@ -228,6 +304,7 @@
 			projectRoot = "";
 			targets = (
 				4800D652223FF6F80041AF8B /* Gifting */,
+				48399683226FA70B0027ADA4 /* GiftingWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -241,6 +318,14 @@
 				48841C85224421E700CA76D8 /* GoogleService-Info.plist in Resources */,
 				4800D65E223FF6FB0041AF8B /* Assets.xcassets in Resources */,
 				4800D65C223FF6F80041AF8B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48399682226FA70B0027ADA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4839968B226FA70B0027ADA4 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +406,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		48399680226FA70B0027ADA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48399688226FA70B0027ADA4 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4839968E226FA70B0027ADA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48399683226FA70B0027ADA4 /* GiftingWidget */;
+			targetProxy = 4839968D226FA70B0027ADA4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4800D65A223FF6F80041AF8B /* Main.storyboard */ = {
@@ -338,6 +439,14 @@
 				4800D660223FF6FB0041AF8B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		48399689226FA70B0027ADA4 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4839968A226FA70B0027ADA4 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -463,6 +572,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3691B67CD5E2F63E44D8D2F3 /* Pods-Gifting.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QXX5TRU44F;
@@ -482,6 +592,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2A79E1EE621BE7818DFE1035 /* Pods-Gifting.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QXX5TRU44F;
@@ -492,6 +603,46 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Frulwinn.Gifting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		48399691226FA70B0027ADA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QXX5TRU44F;
+				INFOPLIST_FILE = GiftingWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Frulwinn.Gifting.GiftingWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		48399692226FA70B0027ADA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QXX5TRU44F;
+				INFOPLIST_FILE = GiftingWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Frulwinn.Gifting.GiftingWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -514,6 +665,15 @@
 			buildConfigurations = (
 				4800D666223FF6FB0041AF8B /* Debug */,
 				4800D667223FF6FB0041AF8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48399690226FA70B0027ADA4 /* Build configuration list for PBXNativeTarget "GiftingWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48399691226FA70B0027ADA4 /* Debug */,
+				48399692226FA70B0027ADA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
