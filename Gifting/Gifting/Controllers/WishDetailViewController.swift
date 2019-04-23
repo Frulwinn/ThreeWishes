@@ -12,13 +12,17 @@ class WishDetailViewController: UIViewController {
     
     //MARK: - Properties
     private var datePicker: UIDatePicker?
-    //var selectedDate: Date?
+
     var personController: PersonController?
     var person: Person? {
         didSet {
             updateViews()
         }
     }
+    
+    var isBoughtFirst = false
+    var isBoughtSecond = false
+    var isBoughtThird = false
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -37,26 +41,27 @@ class WishDetailViewController: UIViewController {
     @IBOutlet weak var thirdBuyButton: ChangeBuyButton!
     
     @IBAction func firstBuyButton(_ sender: Any) {
-        do {
-            let moc = CoreDataStack.shared.mainContext
-            try moc.save() // Save the task to the persistent store.
-        } catch {
-            NSLog("Error saving managed object context: \(error)")
-        }
+        isBoughtFirst = !isBoughtFirst
+        save()
     }
     
     @IBAction func secondBuyButton(_ sender: Any) {
-        
-        
+        isBoughtSecond = !isBoughtSecond
+        save()
     }
     
     @IBAction func thirdBuyButton(_ sender: Any) {
-        
-        
+        isBoughtThird = !isBoughtThird
+        save()
     }
     
     
     @IBAction func save(_ sender: Any) {
+        save()
+        navigationController?.popViewController(animated: true)
+    }
+    
+    func save() {
         guard let name = nameTextField.text, !name.isEmpty,
             let firstChoice = firstTextField.text,
             let secondChoice = secondTextField.text,
@@ -66,15 +71,27 @@ class WishDetailViewController: UIViewController {
         let date = self.dateFormatter.date(from: birthDay)!
         
         if let person = person {
-            personController?.update(person, withName: name, birthday: date, firstChoice: firstChoice, secondChoice: secondChoice, thirdChoice: thirdChoice, isBought: isBought)
+            personController?.update(person, withName: name,
+                                     birthday: date,
+                                     firstChoice: firstChoice,
+                                     secondChoice: secondChoice,
+                                     thirdChoice: thirdChoice,
+                                     isBoughtFirst: isBoughtFirst,
+                                     isBoughtSecond: isBoughtSecond,
+                                     isBoughtThird: isBoughtThird)
         } else {
-            personController?.createPerson(with: name, birthday: date, firstChoice: firstChoice, secondChoice: secondChoice, thirdChoice: thirdChoice, isBought: isBought)
+            personController?.createPerson(with: name,
+                                           birthday: date,
+                                           firstChoice: firstChoice,
+                                           secondChoice: secondChoice,
+                                           thirdChoice: thirdChoice,
+                                           isBoughtFirst: isBoughtFirst,
+                                           isBoughtSecond: isBoughtSecond,
+                                           isBoughtThird: isBoughtThird)
         }
-        navigationController?.popViewController(animated: true)
     }
     
     func setThemes() {
-        
         //text field
         nameTextField.font = Appearance.gillSansFont(with: .body, pointSize: 18)
         birthdayTextField.font = Appearance.gillSansFont(with: .body, pointSize: 18)
@@ -149,5 +166,6 @@ class WishDetailViewController: UIViewController {
         firstTextField.text = person.firstChoice
         secondTextField.text = person.secondChoice
         thirdTextField.text = person.thirdChoice
+
     }
 }
