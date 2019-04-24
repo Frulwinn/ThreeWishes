@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GiftingCore
 
 class WishDetailViewController: UIViewController {
     

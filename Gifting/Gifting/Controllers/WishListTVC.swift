@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import GiftingCore
 
 
 class WishListTVC: UITableViewController, NSFetchedResultsControllerDelegate {

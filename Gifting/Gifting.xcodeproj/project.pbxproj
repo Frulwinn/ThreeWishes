@@ -20,6 +20,8 @@
 		4839968F226FA70B0027ADA4 /* GiftingWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 48399684226FA70B0027ADA4 /* GiftingWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		483996ED226FBC990027ADA4 /* GiftingCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 483996C2226FAA950027ADA4 /* GiftingCore.framework */; };
 		483996EE226FBC990027ADA4 /* GiftingCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 483996C2226FAA950027ADA4 /* GiftingCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		48399707226FC27A0027ADA4 /* Gifting.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4800D66F224040C30041AF8B /* Gifting.xcdatamodeld */; };
+		48399708226FC2830027ADA4 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4800D672224042BF0041AF8B /* CoreDataStack.swift */; };
 		48841C6A2241907C00CA76D8 /* WishListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48841C692241907C00CA76D8 /* WishListTVC.swift */; };
 		48841C6C224190BC00CA76D8 /* WishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48841C6B224190BC00CA76D8 /* WishDetailViewController.swift */; };
 		48841C6E2241992B00CA76D8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48841C6D2241992B00CA76D8 /* TableViewCell.swift */; };
@@ -450,6 +452,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48399708226FC2830027ADA4 /* CoreDataStack.swift in Sources */,
+				48399707226FC27A0027ADA4 /* Gifting.xcdatamodeld in Sources */,
 				48399688226FA70B0027ADA4 /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -622,6 +626,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QXX5TRU44F;
 				INFOPLIST_FILE = Gifting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -642,6 +647,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QXX5TRU44F;
 				INFOPLIST_FILE = Gifting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -659,7 +665,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QXX5TRU44F;
 				INFOPLIST_FILE = GiftingWidget/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -679,7 +685,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QXX5TRU44F;
 				INFOPLIST_FILE = GiftingWidget/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
