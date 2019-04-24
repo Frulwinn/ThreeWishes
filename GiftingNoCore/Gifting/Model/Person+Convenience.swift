@@ -9,7 +9,7 @@
 import CoreData
 
 extension Person {
-    public convenience init(name: String, birthday: Date, firstChoice: String?, secondChoice: String?, thirdChoice: String?, identifier: String = UUID().uuidString, isBoughtFirst: Bool? = false, isBoughtSecond: Bool? = false, isBoughtThird: Bool? = false, context: NSManagedObjectContext = CoreDataStack.shared.mainContext) {
+    convenience init(name: String, birthday: Date, firstChoice: String?, secondChoice: String?, thirdChoice: String?, identifier: String = UUID().uuidString, isBoughtFirst: Bool? = false, isBoughtSecond: Bool? = false, isBoughtThird: Bool? = false, context: NSManagedObjectContext = CoreDataStack.shared.mainContext) {
         
         self.init(context: context)
         self.name = name
@@ -23,7 +23,7 @@ extension Person {
         self.isBoughtThird = isBoughtThird ?? false
     }
     
-    public convenience init?(personRepresentation: PersonRepresentation, context: NSManagedObjectContext = CoreDataStack.shared.mainContext) {
+    convenience init?(personRepresentation: PersonRepresentation, context: NSManagedObjectContext = CoreDataStack.shared.mainContext) {
         
         guard let identifier = UUID(uuidString: personRepresentation.identifier),
             let isBoughtFirst = personRepresentation.isBoughtFirst,

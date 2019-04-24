@@ -161,6 +161,7 @@ class WishListTVC: UITableViewController, NSFetchedResultsControllerDelegate {
         }
     }
     
+    //shared user defaults between app and widget
     let sharedUserDefaults = UserDefaults(suiteName: "group.com.Frulwinn.Gifting")!
     
     // MARK: - Navigation
@@ -174,6 +175,9 @@ class WishListTVC: UITableViewController, NSFetchedResultsControllerDelegate {
                 
                 destinationVC.person = person
                 destinationVC.personController = personController
+                
+                //this shows the last view person on widget
+                sharedUserDefaults.setValue(person.identifier, forKey: "LastViewedPerson")
             }
         } else if segue.identifier == "addSegue" {
             let destinationVC = segue.destination as? WishDetailViewController

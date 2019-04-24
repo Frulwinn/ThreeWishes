@@ -15,11 +15,14 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     //MARK: - Properties
     let fetcher = PersonController()
-    var person: Person?
-    /*
-     var symbol: String {
-        return "GBP"
-    */
+    
+    //shared user defaults between app and widget
+    let sharedUserDefaults = UserDefaults(suiteName: "group.com.Frulwinn.Gifting")!
+    var person: Person? {
+        didSet {
+            //    return sharedUserDefaults.string(forKey: "LastViewedPerson")
+        }
+    }
     
     //MARK: - Outlets
     @IBOutlet weak var birthdayLabel: UILabel!
@@ -37,15 +40,9 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
         // Perform any setup necessary in order to update the view.
         // need birthday, name, firstchoice
+        guard let identifier = sharedUserDefaults.string(forKey: "LastViewedPerson"),
         
-        fetcher.fetchPersonFromServer { (error) in
-            if let error = error {
-                NSLog("Error fetching current person: \(error)")
-                completionHandler(.failed)
-                return
-            }
-            
-            guard let person = self.person,
+            let person = fetcher.fetchOnePersonFromServer(identifier: identifier , context: CoreDataStack.shared.mainContext),
                 let birthday = person.birthday else {
                 completionHandler(.failed)
                 return
@@ -59,7 +56,6 @@ class TodayViewController: UIViewController, NCWidgetProviding {
                 self.nameLabel.text = person.name
                 self.giftLabel.text = person.firstChoice
             }
-        }
         
         completionHandler(NCUpdateResult.newData)
     }
@@ -68,12 +64,13 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         switch activeDisplayMode {
         case .compact:
             preferredContentSize = maxSize
-            //self.giftLabel.isHidden = true
+            self.giftLabel.isHidden = true
         case .expanded:
-            preferredContentSize = CGSize(width: maxSize.width, height: 200)
-            //self.giftLabel.isHidden = false
+            preferredContentSize = CGSize(width: maxSize.width, height: 160)
+            self.giftLabel.isHidden = false
         default:
             break
         }
     }
+    
 }

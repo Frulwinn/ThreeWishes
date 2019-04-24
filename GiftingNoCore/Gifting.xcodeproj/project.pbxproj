@@ -38,6 +38,8 @@
 		48841C7C224316EA00CA76D8 /* Color+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48841C7B224316EA00CA76D8 /* Color+Convenience.swift */; };
 		48841C832243E98100CA76D8 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48841C822243E98100CA76D8 /* DateFormatter.swift */; };
 		48841C85224421E700CA76D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48841C84224421E700CA76D8 /* GoogleService-Info.plist */; };
+		48A2571622710EF100DBDA83 /* PersistenceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A2571522710EF100DBDA83 /* PersistenceContainer.swift */; };
+		48A2571722710EF100DBDA83 /* PersistenceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A2571522710EF100DBDA83 /* PersistenceContainer.swift */; };
 		C6CAABAA5719459DB38FA0B3 /* Pods_Gifting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFC873E699323886282130B /* Pods_Gifting.framework */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +99,8 @@
 		48841C7B224316EA00CA76D8 /* Color+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Convenience.swift"; sourceTree = "<group>"; };
 		48841C822243E98100CA76D8 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		48841C84224421E700CA76D8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		48A2571522710EF100DBDA83 /* PersistenceContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceContainer.swift; sourceTree = "<group>"; };
+		48A2571822711A2F00DBDA83 /* log.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = log.md; sourceTree = "<group>"; };
 		4BFC873E699323886282130B /* Pods_Gifting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gifting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -154,6 +158,7 @@
 			children = (
 				482A1C942270ECE00031DC67 /* Gifting.entitlements */,
 				4800D656223FF6F80041AF8B /* AppDelegate.swift */,
+				48A2571822711A2F00DBDA83 /* log.md */,
 				48841C822243E98100CA76D8 /* DateFormatter.swift */,
 				48841C7D2243170900CA76D8 /* UI */,
 				4800D66C2240073A0041AF8B /* Model */,
@@ -194,6 +199,7 @@
 			children = (
 				4800D66F224040C30041AF8B /* Gifting.xcdatamodeld */,
 				4800D672224042BF0041AF8B /* CoreDataStack.swift */,
+				48A2571522710EF100DBDA83 /* PersistenceContainer.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -426,6 +432,7 @@
 				48841C6C224190BC00CA76D8 /* WishDetailViewController.swift in Sources */,
 				482A1C752270B86F0031DC67 /* ChangeBuyButton.swift in Sources */,
 				4800D673224042BF0041AF8B /* CoreDataStack.swift in Sources */,
+				48A2571622710EF100DBDA83 /* PersistenceContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +449,7 @@
 				482A1C8F2270C61A0031DC67 /* Gifting.xcdatamodeld in Sources */,
 				482A1C932270D77D0031DC67 /* Color+Convenience.swift in Sources */,
 				482A1C8C2270C5FF0031DC67 /* Person+Convenience.swift in Sources */,
+				48A2571722710EF100DBDA83 /* PersistenceContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

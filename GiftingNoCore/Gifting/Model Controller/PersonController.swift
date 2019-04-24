@@ -94,6 +94,7 @@ class PersonController {
     }
     
     //fetch
+    //fetch one person from coredata
     func fetchOnePersonFromServer(identifier: String, context: NSManagedObjectContext) -> Person? {
         let fetchRequest: NSFetchRequest<Person> = Person.fetchRequest()
         

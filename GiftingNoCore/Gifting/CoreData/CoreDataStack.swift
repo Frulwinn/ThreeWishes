@@ -8,14 +8,14 @@
 
 import CoreData
 
-public class CoreDataStack {
+class CoreDataStack {
     
-    public static let shared = CoreDataStack()
+    static let shared = CoreDataStack()
     
-    public lazy var container: NSPersistentContainer = {
+    lazy var container: PersistentContainer = {
         
         // Give the container the name of your data model file
-        let container = NSPersistentContainer(name: "Gifting")
+        let container = PersistentContainer(name: "Gifting")
         
         // Load the persistent store
         container.loadPersistentStores { (_, error) in
@@ -29,7 +29,7 @@ public class CoreDataStack {
     }()
     
     // This should help you remember that the viewContext should be used on the main thread
-    public var mainContext: NSManagedObjectContext {
+    var mainContext: NSManagedObjectContext {
         return container.viewContext
     }
 }
