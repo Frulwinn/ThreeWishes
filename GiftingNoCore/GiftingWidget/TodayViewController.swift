@@ -64,4 +64,16 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         completionHandler(NCUpdateResult.newData)
     }
     
+    func widgetActiveDisplayModeDidChange(_ activeDisplayMode: NCWidgetDisplayMode, withMaximumSize maxSize: CGSize) {
+        switch activeDisplayMode {
+        case .compact:
+            preferredContentSize = maxSize
+            //self.giftLabel.isHidden = true
+        case .expanded:
+            preferredContentSize = CGSize(width: maxSize.width, height: 200)
+            //self.giftLabel.isHidden = false
+        default:
+            break
+        }
+    }
 }

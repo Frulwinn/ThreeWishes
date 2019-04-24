@@ -87,6 +87,8 @@
 		482A1C7E2270C57D0031DC67 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		482A1C812270C57D0031DC67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		482A1C832270C57D0031DC67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		482A1C942270ECE00031DC67 /* Gifting.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Gifting.entitlements; sourceTree = "<group>"; };
+		482A1C952270ECE30031DC67 /* GiftingWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GiftingWidget.entitlements; sourceTree = "<group>"; };
 		48841C692241907C00CA76D8 /* WishListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListTVC.swift; sourceTree = "<group>"; };
 		48841C6B224190BC00CA76D8 /* WishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishDetailViewController.swift; sourceTree = "<group>"; };
 		48841C6D2241992B00CA76D8 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 		4800D655223FF6F80041AF8B /* Gifting */ = {
 			isa = PBXGroup;
 			children = (
+				482A1C942270ECE00031DC67 /* Gifting.entitlements */,
 				4800D656223FF6F80041AF8B /* AppDelegate.swift */,
 				48841C822243E98100CA76D8 /* DateFormatter.swift */,
 				48841C7D2243170900CA76D8 /* UI */,
@@ -215,6 +218,7 @@
 		482A1C7D2270C57D0031DC67 /* GiftingWidget */ = {
 			isa = PBXGroup;
 			children = (
+				482A1C952270ECE30031DC67 /* GiftingWidget.entitlements */,
 				482A1C7E2270C57D0031DC67 /* TodayViewController.swift */,
 				482A1C802270C57D0031DC67 /* MainInterface.storyboard */,
 				482A1C832270C57D0031DC67 /* Info.plist */,
@@ -294,9 +298,19 @@
 					4800D652223FF6F80041AF8B = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					482A1C792270C57D0031DC67 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -591,6 +605,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Gifting/Gifting.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QXX5TRU44F;
 				INFOPLIST_FILE = Gifting/Info.plist;
@@ -612,6 +627,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Gifting/Gifting.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QXX5TRU44F;
 				INFOPLIST_FILE = Gifting/Info.plist;
@@ -631,6 +647,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
+				CODE_SIGN_ENTITLEMENTS = GiftingWidget/GiftingWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QXX5TRU44F;
 				INFOPLIST_FILE = GiftingWidget/Info.plist;
@@ -652,6 +669,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
+				CODE_SIGN_ENTITLEMENTS = GiftingWidget/GiftingWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QXX5TRU44F;
 				INFOPLIST_FILE = GiftingWidget/Info.plist;

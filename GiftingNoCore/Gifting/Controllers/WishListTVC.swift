@@ -142,7 +142,8 @@ class WishListTVC: UITableViewController, NSFetchedResultsControllerDelegate {
             guard let indexPath = indexPath,
                 let newIndexPath = newIndexPath else { return }
             tableView.moveRow(at: indexPath, to: newIndexPath)
-            
+        default:
+            break
         }
     }
     
@@ -159,6 +160,8 @@ class WishListTVC: UITableViewController, NSFetchedResultsControllerDelegate {
             break
         }
     }
+    
+    let sharedUserDefaults = UserDefaults(suiteName: "group.com.Frulwinn.Gifting")!
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
