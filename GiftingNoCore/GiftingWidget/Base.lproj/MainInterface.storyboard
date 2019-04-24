@@ -15,47 +15,41 @@
             <objects>
                 <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="GiftingWidget" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="KaU-NY-DfF">
-                                <rect key="frame" x="30" y="30" width="260" height="72"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="KaU-NY-DfF">
+                                <rect key="frame" x="30" y="0.0" width="260" height="80"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="CNO-xl-Ed3">
-                                        <rect key="frame" x="0.0" y="0.0" width="260" height="17.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="CNO-xl-Ed3">
+                                        <rect key="frame" x="0.0" y="0.0" width="260" height="80"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhT-b7-ey8">
-                                                <rect key="frame" x="0.0" y="0.0" width="100" height="17.5"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="Kdk-kf-6UE"/>
-                                                </constraints>
+                                                <rect key="frame" x="0.0" y="0.0" width="32" height="80"/>
                                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
                                                 <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZaZ-gp-nSr">
-                                                <rect key="frame" x="108" y="0.0" width="152" height="17.5"/>
+                                                <rect key="frame" x="103.5" y="0.0" width="53" height="80"/>
+                                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="25"/>
+                                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ne1-dw-EfH">
+                                                <rect key="frame" x="228" y="0.0" width="32" height="80"/>
                                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
                                                 <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="ZaZ-gp-nSr" firstAttribute="height" secondItem="uhT-b7-ey8" secondAttribute="height" id="kOK-yJ-RrH"/>
-                                        </constraints>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ne1-dw-EfH">
-                                        <rect key="frame" x="0.0" y="37.5" width="260" height="34.5"/>
-                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="30"/>
-                                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="KaU-NY-DfF" secondAttribute="bottom" constant="8" id="A5n-JA-rhG"/>
-                            <constraint firstItem="KaU-NY-DfF" firstAttribute="top" secondItem="S3S-Oj-5AN" secondAttribute="top" constant="30" id="cnk-Nr-r6T"/>
+                            <constraint firstAttribute="bottom" secondItem="KaU-NY-DfF" secondAttribute="bottom" id="A5n-JA-rhG"/>
+                            <constraint firstItem="KaU-NY-DfF" firstAttribute="top" secondItem="S3S-Oj-5AN" secondAttribute="top" id="cnk-Nr-r6T"/>
                             <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="KaU-NY-DfF" secondAttribute="trailing" constant="30" id="ec1-7c-1xG"/>
                             <constraint firstItem="KaU-NY-DfF" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="30" id="xKf-bu-bAP"/>
                         </constraints>
@@ -63,7 +57,7 @@
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="110"/>
+                    <size key="freeformSize" width="320" height="80"/>
                     <connections>
                         <outlet property="birthdayLabel" destination="uhT-b7-ey8" id="Mvh-Tg-EBe"/>
                         <outlet property="giftLabel" destination="Ne1-dw-EfH" id="GsC-Wu-kaz"/>

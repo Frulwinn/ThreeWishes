@@ -31,15 +31,17 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //extensionContext?.widgetLargestAvailableDisplayMode = .expanded
         
-        //extends widget
-        extensionContext?.widgetLargestAvailableDisplayMode = .expanded
-
+        birthdayLabel.textColor = .cream
+        nameLabel.textColor = .brownRed
+        giftLabel.textColor = .cream
+        view.backgroundColor = .deepRed
     }
         
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
-        // Perform any setup necessary in order to update the view.
-        // need birthday, name, firstchoice
+   
+        
         guard let identifier = sharedUserDefaults.string(forKey: "LastViewedPerson"),
         
             let person = fetcher.fetchOnePersonFromServer(identifier: identifier , context: CoreDataStack.shared.mainContext),
@@ -58,19 +60,6 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             }
         
         completionHandler(NCUpdateResult.newData)
-    }
-    
-    func widgetActiveDisplayModeDidChange(_ activeDisplayMode: NCWidgetDisplayMode, withMaximumSize maxSize: CGSize) {
-        switch activeDisplayMode {
-        case .compact:
-            preferredContentSize = maxSize
-            self.giftLabel.isHidden = true
-        case .expanded:
-            preferredContentSize = CGSize(width: maxSize.width, height: 160)
-            self.giftLabel.isHidden = false
-        default:
-            break
-        }
     }
     
 }
