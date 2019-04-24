@@ -8,20 +8,23 @@
 
 import UIKit
 import NotificationCenter
+import CoreData
 
+//Don't forget to say no to Rquire Only App - Extension Safe API in widget target build settings
 class TodayViewController: UIViewController, NCWidgetProviding {
-        
+    
+    //MARK: - Outlets
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var giftLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
     }
         
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
         // Perform any setup necessary in order to update the view.
         
-        // If an error is encountered, use NCUpdateResult.Failed
-        // If there's no update required, use NCUpdateResult.NoData
-        // If there's an update, use NCUpdateResult.NewData
         
         completionHandler(NCUpdateResult.newData)
     }
