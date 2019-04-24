@@ -17,17 +17,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="KaU-NY-DfF">
-                                <rect key="frame" x="20" y="40" width="280" height="61"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="KaU-NY-DfF">
+                                <rect key="frame" x="30" y="40" width="260" height="91.5"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhT-b7-ey8">
+                                        <rect key="frame" x="0.0" y="0.0" width="260" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZaZ-gp-nSr">
-                                        <rect key="frame" x="0.0" y="0.0" width="280" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="35.5" width="260" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ne1-dw-EfH">
-                                        <rect key="frame" x="0.0" y="40.5" width="280" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="71" width="260" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                         <nil key="highlightedColor"/>
@@ -37,8 +43,8 @@
                         </subviews>
                         <constraints>
                             <constraint firstItem="KaU-NY-DfF" firstAttribute="top" secondItem="S3S-Oj-5AN" secondAttribute="top" constant="40" id="cnk-Nr-r6T"/>
-                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="KaU-NY-DfF" secondAttribute="trailing" constant="20" id="ec1-7c-1xG"/>
-                            <constraint firstItem="KaU-NY-DfF" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="20" id="xKf-bu-bAP"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="KaU-NY-DfF" secondAttribute="trailing" constant="30" id="ec1-7c-1xG"/>
+                            <constraint firstItem="KaU-NY-DfF" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="30" id="xKf-bu-bAP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
                     </view>
@@ -46,6 +52,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="150"/>
                     <connections>
+                        <outlet property="birthdayLabel" destination="uhT-b7-ey8" id="Mvh-Tg-EBe"/>
                         <outlet property="giftLabel" destination="Ne1-dw-EfH" id="GsC-Wu-kaz"/>
                         <outlet property="nameLabel" destination="ZaZ-gp-nSr" id="Ees-jf-LUQ"/>
                     </connections>
