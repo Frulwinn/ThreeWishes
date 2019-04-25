@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Gifting_watchOS" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="zhH-Uw-IxO">
+                            <items>
+                                <tableRow identifier="PersonRow" id="b8f-zc-FN7" customClass="PersonRowController" customModule="Gifting_watchOS_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="SYh-Ns-Mgi">
+                                        <items>
+                                            <label width="60" height="1" alignment="left" verticalAlignment="center" text="Label" textAlignment="left" id="Li7-Ep-TcA">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                            <label width="60" height="1" alignment="left" verticalAlignment="center" text="Label" minimumScaleFactor="0.5" id="7Iv-MX-4nj">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="birthdayLabel" destination="Li7-Ep-TcA" id="3XN-ry-1oF"/>
+                                        <outlet property="nameLabel" destination="7Iv-MX-4nj" id="6xV-0T-23u"/>
+                                        <segue destination="ua9-JG-kT6" kind="push" id="Oyb-vO-334"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="personTable" destination="zhH-Uw-IxO" id="6ce-kX-uQc"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+        <!--Detail Interface Controller-->
+        <scene sceneID="e53-x1-j5M">
+            <objects>
+                <controller id="ua9-JG-kT6" customClass="DetailInterfaceController" customModule="Gifting_watchOS_Extension">
+                    <items>
+                        <group width="1" height="1" alignment="center" verticalAlignment="center" layout="vertical" spacing="30" id="M0a-f7-91F">
+                            <items>
+                                <label width="1" alignment="left" text="Label" textAlignment="center" id="dAP-Qb-7yU"/>
+                                <label width="1" alignment="left" text="Label" textAlignment="center" id="H6O-6G-SCQ"/>
+                                <label width="1" alignment="left" text="Label" textAlignment="center" id="aJg-b1-3Cg"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="firstChoiceLabel" destination="dAP-Qb-7yU" id="Wy8-Yr-53D"/>
+                        <outlet property="secondChoiceLabel" destination="H6O-6G-SCQ" id="VWi-yd-Wjw"/>
+                        <outlet property="thirdChoiceLabel" destination="aJg-b1-3Cg" id="B9g-HG-q1g"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="299" y="115"/>
+        </scene>
+    </scenes>
+</document>
