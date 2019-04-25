@@ -14,7 +14,16 @@ class InterfaceController: WKInterfaceController, NSFetchedResultsControllerDele
     
     //MARK: - Properties
     let personController = PersonController()
-
+    var people: [Person]{
+        let fetchedRequest: NSFetchRequest<Person> = Person.fetchRequest()
+        
+        let moc = CoreDataStack.shared.mainContext
+        
+        let people = (try? moc.fetch(fetchedRequest)) ?? []
+        
+        return people
+    }
+    
     lazy var fetchedResultsController: NSFetchedResultsController<Person> = {
         let fetchedRequest: NSFetchRequest<Person> = Person.fetchRequest()
         
@@ -35,27 +44,25 @@ class InterfaceController: WKInterfaceController, NSFetchedResultsControllerDele
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        //takes place of numberOfRowsInSection
-        //return fetchedResultsController.sections?[section].numberOfObjects ?? 0
-        //hey table this is your number of rows
-        //pushing information
-        personTable.setNumberOfRows(fetchedResultsController.section(forSectionIndexTitle: Person.self, at: 1), withRowType: "PersonRow")
+        _ = fetchedResultsController
         
-        //loops through the people and pass one to one row that it corresponds to
-        //enumerated sequence returns pair (n, x) where index represents a consecutive integer starting at zero and person represents an element of the sequence in the array
-        //makes index for you
-        for (index, person) in Person.enumerated() {
-            //hey rowController
-            let rowController = personTable.rowController(at: index) as! PersonRowController
-            //this is what you need to display
-            rowController.person = person
+        PersonController().fetchPersonFromServer { (_) in
+            self.personTable.setNumberOfRows(self.people.count , withRowType: "PersonRow")
+            
+            //guard let people = fetchedResultsController.fetchedObjects?.enumerated() else { return }
+            for (index, person) in self.people.enumerated() {
+                
+                let rowController = self.personTable.rowController(at: index) as! PersonRowController
+                rowController.person = person
+            }
         }
         
+       
     }
     
     //this allows when clicking on the row takes you to the detail view controller
     override func contextForSegue(withIdentifier segueIdentifier: String, in table: WKInterfaceTable, rowIndex: Int) -> Any? {
         //return the thing that you want to pass to the new interface controller
-        return person[rowIndex]
+        return people[rowIndex]
     }
 }

@@ -41,6 +41,7 @@
                     </connections>
                 </controller>
             </objects>
+            <point key="canvasLocation" x="77" y="104"/>
         </scene>
         <!--Detail Interface Controller-->
         <scene sceneID="e53-x1-j5M">
@@ -62,7 +63,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="299" y="115"/>
+            <point key="canvasLocation" x="373" y="104"/>
         </scene>
     </scenes>
 </document>

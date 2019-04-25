@@ -8,6 +8,7 @@
 
 import WatchKit
 import Foundation
+import CoreData
 
 
 class DetailInterfaceController: WKInterfaceController {
@@ -36,17 +37,17 @@ class DetailInterfaceController: WKInterfaceController {
         //set title
         setTitle(person)
         
-        //fetch the firstChoice, secondChoice, thirdChoice for that person
-        fetcher.fetchOnePersonFromServer(identifier: person, context: CoreDataStack.shared.mainContext) {
-            
-            //we set the firstChoice, secondChoice, and thirdChoice for that person
-            //since updateviews is running in background thread we want to set these on the main queue so that when it gets to updateviews it sets it on the main queue
-            DispatchQueue.main.async {
-                self.firstChoice = firstChoice
-                self.secondChoice = secondChoice
-                self.thirdChoice = thirdChoice
-            }
-        }
+//        //fetch the firstChoice, secondChoice, thirdChoice for that person
+//        fetcher.fetchOnePersonFromServer(identifier: person, context: CoreDataStack.shared.mainContext) {
+//
+//            //we set the firstChoice, secondChoice, and thirdChoice for that person
+//            //since updateviews is running in background thread we want to set these on the main queue so that when it gets to updateviews it sets it on the main queue
+//            DispatchQueue.main.async {
+//                self.firstChoice = firstChoice
+//                self.secondChoice = secondChoice
+//                self.thirdChoice = thirdChoice
+//            }
+//        }
     }
     
     private func updateViews() {

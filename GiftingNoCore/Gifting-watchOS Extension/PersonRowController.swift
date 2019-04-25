@@ -12,13 +12,7 @@ import WatchKit
 class PersonRowController: NSObject {
     
     //MARK: - Properties
-    var person: Person?
-    var birthday: Date? {
-        didSet {
-            updateViews()
-        }
-    }
-    var name: String? {
+    var person: Person? {
         didSet {
             updateViews()
         }
