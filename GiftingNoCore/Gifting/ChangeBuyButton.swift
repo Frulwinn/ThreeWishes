@@ -39,11 +39,11 @@ class ChangeBuyButton: UIButton {
         
         //let color = bool ? UIColor.deepRed : .clear
         let title = bool ? "bought" : "buy"
-        let titleColor = bool ? UIColor.cream : UIColor.brownRed
+        //let titleColor = bool ? UIColor.cream : UIColor.brownRed
         
         
         setTitle(title, for: .normal)
-        setTitleColor(titleColor, for: .normal)
+        //setTitleColor(titleColor, for: .normal)
         //backgroundColor = color
     }
 }

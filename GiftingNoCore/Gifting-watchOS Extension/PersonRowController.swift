@@ -21,6 +21,7 @@ class PersonRowController: NSObject {
     //MARK: - Outlets
     @IBOutlet weak var birthdayLabel: WKInterfaceLabel!
     @IBOutlet weak var nameLabel: WKInterfaceLabel!
+    @IBOutlet weak var personGroup: WKInterfaceGroup!
     
     private func updateViews() {
         guard let person = person else { return }
@@ -33,5 +34,9 @@ class PersonRowController: NSObject {
         
         birthdayLabel.setText(dateFormatter.string(for: birthdayLabelText))
         nameLabel.setText(nameLabelText)
+        
+        birthdayLabel.setTextColor(.cream)
+        nameLabel.setTextColor(.brownRed)
+        personGroup.setBackgroundColor(.deepRed)
     }
 }

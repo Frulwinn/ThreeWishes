@@ -31,6 +31,9 @@
 		482A1C912270CB410031DC67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4800D65D223FF6FB0041AF8B /* Assets.xcassets */; };
 		482A1C922270D77A0031DC67 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48841C79224316D000CA76D8 /* Appearance.swift */; };
 		482A1C932270D77D0031DC67 /* Color+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48841C7B224316EA00CA76D8 /* Color+Convenience.swift */; };
+		48796F7D227360E3003CD3D6 /* Color+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48841C7B224316EA00CA76D8 /* Color+Convenience.swift */; };
+		48796F7E22736F37003CD3D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4800D65D223FF6FB0041AF8B /* Assets.xcassets */; };
+		48796F7F22736F37003CD3D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4800D65D223FF6FB0041AF8B /* Assets.xcassets */; };
 		48841C6A2241907C00CA76D8 /* WishListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48841C692241907C00CA76D8 /* WishListTVC.swift */; };
 		48841C6C224190BC00CA76D8 /* WishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48841C6B224190BC00CA76D8 /* WishDetailViewController.swift */; };
 		48841C6E2241992B00CA76D8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48841C6D2241992B00CA76D8 /* TableViewCell.swift */; };
@@ -518,6 +521,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48A25721227151BE00DBDA83 /* Assets.xcassets in Resources */,
+				48796F7E22736F37003CD3D6 /* Assets.xcassets in Resources */,
 				48A2571F227151BB00DBDA83 /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,6 +530,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48796F7F22736F37003CD3D6 /* Assets.xcassets in Resources */,
 				48A25731227151C000DBDA83 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -628,6 +633,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48A2573E22715DB000DBDA83 /* PersonRepresentation.swift in Sources */,
+				48796F7D227360E3003CD3D6 /* Color+Convenience.swift in Sources */,
 				48A257482271E80C00DBDA83 /* PersonRowController.swift in Sources */,
 				48A2574222715DCA00DBDA83 /* Gifting.xcdatamodeld in Sources */,
 				48A2572F227151BF00DBDA83 /* ExtensionDelegate.swift in Sources */,

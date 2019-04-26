@@ -17,19 +17,20 @@
                         <table alignment="left" id="zhH-Uw-IxO">
                             <items>
                                 <tableRow identifier="PersonRow" id="b8f-zc-FN7" customClass="PersonRowController" customModule="Gifting_watchOS_Extension">
-                                    <group key="rootItem" width="1" alignment="left" id="SYh-Ns-Mgi">
+                                    <group key="rootItem" width="1" height="56" alignment="left" layout="vertical" id="SYh-Ns-Mgi">
                                         <items>
-                                            <label width="60" height="1" alignment="left" verticalAlignment="center" text="Label" textAlignment="left" id="Li7-Ep-TcA">
+                                            <label alignment="center" verticalAlignment="center" text="Label" textAlignment="center" minimumScaleFactor="0.5" id="Li7-Ep-TcA">
                                                 <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
                                             </label>
-                                            <label width="60" height="1" alignment="left" verticalAlignment="center" text="Label" minimumScaleFactor="0.5" id="7Iv-MX-4nj">
-                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            <label alignment="center" verticalAlignment="center" text="Label" minimumScaleFactor="0.5" id="7Iv-MX-4nj">
+                                                <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
                                             </label>
                                         </items>
                                     </group>
                                     <connections>
                                         <outlet property="birthdayLabel" destination="Li7-Ep-TcA" id="3XN-ry-1oF"/>
                                         <outlet property="nameLabel" destination="7Iv-MX-4nj" id="6xV-0T-23u"/>
+                                        <outlet property="personGroup" destination="SYh-Ns-Mgi" id="s9x-K5-YBN"/>
                                         <segue destination="ua9-JG-kT6" kind="push" id="Oyb-vO-334"/>
                                     </connections>
                                 </tableRow>
@@ -48,16 +49,23 @@
             <objects>
                 <controller id="ua9-JG-kT6" customClass="DetailInterfaceController" customModule="Gifting_watchOS_Extension">
                     <items>
-                        <group width="1" height="1" alignment="center" verticalAlignment="center" layout="vertical" spacing="20" id="M0a-f7-91F">
+                        <group width="1" height="1" alignment="center" verticalAlignment="center" layout="vertical" spacing="10" id="M0a-f7-91F">
                             <items>
-                                <label width="1" alignment="left" text="Label" textAlignment="center" id="dAP-Qb-7yU"/>
-                                <label width="1" alignment="left" text="Label" textAlignment="center" id="H6O-6G-SCQ"/>
-                                <label width="1" alignment="left" text="Label" textAlignment="center" id="aJg-b1-3Cg"/>
+                                <label width="1" alignment="left" text="Label" textAlignment="center" minimumScaleFactor="0.5" id="dAP-Qb-7yU">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label width="1" alignment="left" text="Label" textAlignment="center" minimumScaleFactor="0.5" id="H6O-6G-SCQ">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label width="1" alignment="left" text="Label" textAlignment="center" minimumScaleFactor="0.5" id="aJg-b1-3Cg">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
                             </items>
                             <edgeInsets key="margins" left="0.0" right="0.0" top="30" bottom="0.0"/>
                         </group>
                     </items>
                     <connections>
+                        <outlet property="choiceGroup" destination="M0a-f7-91F" id="6or-B8-mT1"/>
                         <outlet property="firstChoiceLabel" destination="dAP-Qb-7yU" id="Wy8-Yr-53D"/>
                         <outlet property="secondChoiceLabel" destination="H6O-6G-SCQ" id="VWi-yd-Wjw"/>
                         <outlet property="thirdChoiceLabel" destination="aJg-b1-3Cg" id="B9g-HG-q1g"/>

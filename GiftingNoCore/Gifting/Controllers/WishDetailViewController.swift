@@ -162,19 +162,23 @@ class WishDetailViewController: UIViewController {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MMMM d"
         
-        nameTextField.text = person.name
-        birthdayTextField.text = self.dateFormatter.string(from: birthday)
-        firstTextField.text = person.firstChoice
-        secondTextField.text = person.secondChoice
-        thirdTextField.text = person.thirdChoice
         
-        let firstButtonText = person.isBoughtFirst ? "bought" : "buy"
-        firstBuyButton.setTitle(firstButtonText, for: .normal)
+        DispatchQueue.main.async {
+            self.nameTextField.text = person.name
+            self.birthdayTextField.text = self.dateFormatter.string(from: birthday)
+            self.firstTextField.text = person.firstChoice
+            self.secondTextField.text = person.secondChoice
+            self.thirdTextField.text = person.thirdChoice
+            
+            let firstButtonText = person.isBoughtFirst ? "bought" : "buy"
+            self.firstBuyButton.setTitle(firstButtonText, for: .normal)
+            
+            let secondButtonText = person.isBoughtSecond ? "bought" : "buy"
+            self.secondBuyButton.setTitle(secondButtonText, for: .normal)
+            
+            let thirdButtonText = person.isBoughtThird ? "bought" : "buy"
+            self.thirdBuyButton.setTitle(thirdButtonText, for: .normal)
+        }
         
-        let secondButtonText = person.isBoughtSecond ? "bought" : "buy"
-        secondBuyButton.setTitle(secondButtonText, for: .normal)
-        
-        let thirdButtonText = person.isBoughtThird ? "bought" : "buy"
-        thirdBuyButton.setTitle(thirdButtonText, for: .normal)
     }
 }

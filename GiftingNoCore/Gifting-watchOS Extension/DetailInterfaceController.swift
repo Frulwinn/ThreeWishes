@@ -26,6 +26,7 @@ class DetailInterfaceController: WKInterfaceController {
     @IBOutlet weak var firstChoiceLabel: WKInterfaceLabel!
     @IBOutlet weak var secondChoiceLabel: WKInterfaceLabel!
     @IBOutlet weak var thirdChoiceLabel: WKInterfaceLabel!
+    @IBOutlet weak var choiceGroup: WKInterfaceGroup!
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -50,6 +51,12 @@ class DetailInterfaceController: WKInterfaceController {
         firstChoiceLabel.setText(firstChoiceLabelText)
         secondChoiceLabel.setText(secondChoiceLabelText)
         thirdChoiceLabel.setText(thirdChoiceLabelText)
+        
+        firstChoiceLabel.setTextColor(.deepRed)
+        secondChoiceLabel.setTextColor(.deepRed)
+        thirdChoiceLabel.setTextColor(.deepRed)
+        
+        choiceGroup.setBackgroundColor(.cream)
     }
 }
 
