@@ -48,12 +48,13 @@
             <objects>
                 <controller id="ua9-JG-kT6" customClass="DetailInterfaceController" customModule="Gifting_watchOS_Extension">
                     <items>
-                        <group width="1" height="1" alignment="center" verticalAlignment="center" layout="vertical" spacing="30" id="M0a-f7-91F">
+                        <group width="1" height="1" alignment="center" verticalAlignment="center" layout="vertical" spacing="20" id="M0a-f7-91F">
                             <items>
                                 <label width="1" alignment="left" text="Label" textAlignment="center" id="dAP-Qb-7yU"/>
                                 <label width="1" alignment="left" text="Label" textAlignment="center" id="H6O-6G-SCQ"/>
                                 <label width="1" alignment="left" text="Label" textAlignment="center" id="aJg-b1-3Cg"/>
                             </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="30" bottom="0.0"/>
                         </group>
                     </items>
                     <connections>

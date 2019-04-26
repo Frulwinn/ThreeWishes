@@ -16,7 +16,9 @@ class DetailInterfaceController: WKInterfaceController {
     private let fetcher = PersonController()
     private var person: Person? {
         didSet {
-            updateViews()
+            DispatchQueue.main.async {
+                self.updateViews()
+            }
         }
     }
     
@@ -29,8 +31,9 @@ class DetailInterfaceController: WKInterfaceController {
         super.awake(withContext: context)
         
         //grab person from context
-        let person = context as! Person
-        let name = person.name
+        let localPerson = context as! Person
+        let name = localPerson.name
+        person = localPerson
         
         //set title
         setTitle(name)
@@ -39,6 +42,7 @@ class DetailInterfaceController: WKInterfaceController {
     private func updateViews() {
         guard let person = person else { return }
         
+        //let firstChoiceLabelText = person.firstChoice
         let firstChoiceLabelText = person.firstChoice
         let secondChoiceLabelText = person.secondChoice
         let thirdChoiceLabelText = person.thirdChoice
