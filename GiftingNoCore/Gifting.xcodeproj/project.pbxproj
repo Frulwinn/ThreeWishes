@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4800D657223FF6F80041AF8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4800D656223FF6F80041AF8B /* AppDelegate.swift */; };
 		4800D65C223FF6F80041AF8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4800D65A223FF6F80041AF8B /* Main.storyboard */; };
-		4800D65E223FF6FB0041AF8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4800D65D223FF6FB0041AF8B /* Assets.xcassets */; };
 		4800D661223FF6FB0041AF8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4800D65F223FF6FB0041AF8B /* LaunchScreen.storyboard */; };
 		4800D66B2240072B0041AF8B /* PersonRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4800D66A2240072B0041AF8B /* PersonRepresentation.swift */; };
 		4800D671224040C30041AF8B /* Gifting.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4800D66F224040C30041AF8B /* Gifting.xcdatamodeld */; };
@@ -28,12 +27,11 @@
 		482A1C8E2270C6060031DC67 /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4800D676224051A00041AF8B /* PersonController.swift */; };
 		482A1C8F2270C61A0031DC67 /* Gifting.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4800D66F224040C30041AF8B /* Gifting.xcdatamodeld */; };
 		482A1C902270C6200031DC67 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4800D672224042BF0041AF8B /* CoreDataStack.swift */; };
-		482A1C912270CB410031DC67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4800D65D223FF6FB0041AF8B /* Assets.xcassets */; };
 		482A1C922270D77A0031DC67 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48841C79224316D000CA76D8 /* Appearance.swift */; };
 		482A1C932270D77D0031DC67 /* Color+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48841C7B224316EA00CA76D8 /* Color+Convenience.swift */; };
+		482ACC6722737A0900B00E13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 482ACC6622737A0900B00E13 /* Assets.xcassets */; };
+		482ACC6822737A0900B00E13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 482ACC6622737A0900B00E13 /* Assets.xcassets */; };
 		48796F7D227360E3003CD3D6 /* Color+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48841C7B224316EA00CA76D8 /* Color+Convenience.swift */; };
-		48796F7E22736F37003CD3D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4800D65D223FF6FB0041AF8B /* Assets.xcassets */; };
-		48796F7F22736F37003CD3D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4800D65D223FF6FB0041AF8B /* Assets.xcassets */; };
 		48841C6A2241907C00CA76D8 /* WishListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48841C692241907C00CA76D8 /* WishListTVC.swift */; };
 		48841C6C224190BC00CA76D8 /* WishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48841C6B224190BC00CA76D8 /* WishDetailViewController.swift */; };
 		48841C6E2241992B00CA76D8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48841C6D2241992B00CA76D8 /* TableViewCell.swift */; };
@@ -44,7 +42,6 @@
 		48A2571622710EF100DBDA83 /* PersistenceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A2571522710EF100DBDA83 /* PersistenceContainer.swift */; };
 		48A2571722710EF100DBDA83 /* PersistenceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A2571522710EF100DBDA83 /* PersistenceContainer.swift */; };
 		48A2571F227151BB00DBDA83 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48A2571D227151BB00DBDA83 /* Interface.storyboard */; };
-		48A25721227151BE00DBDA83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48A25720227151BE00DBDA83 /* Assets.xcassets */; };
 		48A25728227151BF00DBDA83 /* Gifting-watchOS Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 48A25727227151BE00DBDA83 /* Gifting-watchOS Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		48A2572D227151BF00DBDA83 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A2572C227151BF00DBDA83 /* InterfaceController.swift */; };
 		48A2572F227151BF00DBDA83 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A2572E227151BF00DBDA83 /* ExtensionDelegate.swift */; };
@@ -128,7 +125,6 @@
 		4800D653223FF6F80041AF8B /* Gifting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gifting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4800D656223FF6F80041AF8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4800D65B223FF6F80041AF8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4800D65D223FF6FB0041AF8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4800D660223FF6FB0041AF8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4800D662223FF6FB0041AF8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4800D66A2240072B0041AF8B /* PersonRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRepresentation.swift; sourceTree = "<group>"; };
@@ -146,6 +142,7 @@
 		482A1C832270C57D0031DC67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		482A1C942270ECE00031DC67 /* Gifting.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Gifting.entitlements; sourceTree = "<group>"; };
 		482A1C952270ECE30031DC67 /* GiftingWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GiftingWidget.entitlements; sourceTree = "<group>"; };
+		482ACC6622737A0900B00E13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48841C692241907C00CA76D8 /* WishListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListTVC.swift; sourceTree = "<group>"; };
 		48841C6B224190BC00CA76D8 /* WishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishDetailViewController.swift; sourceTree = "<group>"; };
 		48841C6D2241992B00CA76D8 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
@@ -157,7 +154,6 @@
 		48A2571522710EF100DBDA83 /* PersistenceContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceContainer.swift; sourceTree = "<group>"; };
 		48A2571B227151BA00DBDA83 /* Gifting-watchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gifting-watchOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A2571E227151BB00DBDA83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		48A25720227151BE00DBDA83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48A25722227151BE00DBDA83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48A25727227151BE00DBDA83 /* Gifting-watchOS Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Gifting-watchOS Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A2572C227151BF00DBDA83 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
@@ -245,7 +241,6 @@
 				48841C6D2241992B00CA76D8 /* TableViewCell.swift */,
 				482A1C742270B86F0031DC67 /* ChangeBuyButton.swift */,
 				482A1C722270B3C20031DC67 /* Storyboards */,
-				4800D65D223FF6FB0041AF8B /* Assets.xcassets */,
 				4800D662223FF6FB0041AF8B /* Info.plist */,
 				48841C84224421E700CA76D8 /* GoogleService-Info.plist */,
 			);
@@ -294,6 +289,7 @@
 			children = (
 				4800D65A223FF6F80041AF8B /* Main.storyboard */,
 				4800D65F223FF6FB0041AF8B /* LaunchScreen.storyboard */,
+				482ACC6622737A0900B00E13 /* Assets.xcassets */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -323,7 +319,6 @@
 			children = (
 				48A25745227163A300DBDA83 /* Gifting-watchOS.entitlements */,
 				48A2571D227151BB00DBDA83 /* Interface.storyboard */,
-				48A25720227151BE00DBDA83 /* Assets.xcassets */,
 				48A25722227151BE00DBDA83 /* Info.plist */,
 			);
 			path = "Gifting-watchOS";
@@ -502,7 +497,7 @@
 			files = (
 				4800D661223FF6FB0041AF8B /* LaunchScreen.storyboard in Resources */,
 				48841C85224421E700CA76D8 /* GoogleService-Info.plist in Resources */,
-				4800D65E223FF6FB0041AF8B /* Assets.xcassets in Resources */,
+				482ACC6722737A0900B00E13 /* Assets.xcassets in Resources */,
 				4800D65C223FF6F80041AF8B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,7 +506,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				482A1C912270CB410031DC67 /* Assets.xcassets in Resources */,
+				482ACC6822737A0900B00E13 /* Assets.xcassets in Resources */,
 				482A1C822270C57D0031DC67 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,8 +515,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48A25721227151BE00DBDA83 /* Assets.xcassets in Resources */,
-				48796F7E22736F37003CD3D6 /* Assets.xcassets in Resources */,
 				48A2571F227151BB00DBDA83 /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -530,7 +523,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48796F7F22736F37003CD3D6 /* Assets.xcassets in Resources */,
 				48A25731227151C000DBDA83 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

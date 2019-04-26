@@ -61,7 +61,7 @@
                                     <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
                                 </label>
                             </items>
-                            <edgeInsets key="margins" left="0.0" right="0.0" top="30" bottom="0.0"/>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="20" bottom="0.0"/>
                         </group>
                     </items>
                     <connections>
