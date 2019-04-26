@@ -16,9 +16,7 @@ class InterfaceController: WKInterfaceController, NSFetchedResultsControllerDele
     let personController = PersonController()
     var people: [Person]{
         let fetchedRequest: NSFetchRequest<Person> = Person.fetchRequest()
-        
         let moc = CoreDataStack.shared.mainContext
-        
         let people = (try? moc.fetch(fetchedRequest)) ?? []
         
         return people
@@ -56,8 +54,6 @@ class InterfaceController: WKInterfaceController, NSFetchedResultsControllerDele
                 rowController.person = person
             }
         }
-        
-       
     }
     
     //this allows when clicking on the row takes you to the detail view controller

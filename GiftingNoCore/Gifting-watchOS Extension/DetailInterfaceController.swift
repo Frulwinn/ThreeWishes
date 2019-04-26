@@ -10,19 +10,15 @@ import WatchKit
 import Foundation
 import CoreData
 
-
 class DetailInterfaceController: WKInterfaceController {
     
     //MARK: - Properties
     private let fetcher = PersonController()
-    
     private var person: Person? {
         didSet {
             updateViews()
         }
     }
-    
-    let sharedUserDefaults = UserDefaults(suiteName: "group.com.Frulwinn.Gifting")!
     
     //MARK: - Outlets
     @IBOutlet weak var firstChoiceLabel: WKInterfaceLabel!
@@ -33,21 +29,11 @@ class DetailInterfaceController: WKInterfaceController {
         super.awake(withContext: context)
         
         //grab person from context
-        let person = context as! String
-        //set title
-        setTitle(person)
+        let person = context as! Person
+        let name = person.name
         
-//        //fetch the firstChoice, secondChoice, thirdChoice for that person
-//        fetcher.fetchOnePersonFromServer(identifier: person, context: CoreDataStack.shared.mainContext) {
-//
-//            //we set the firstChoice, secondChoice, and thirdChoice for that person
-//            //since updateviews is running in background thread we want to set these on the main queue so that when it gets to updateviews it sets it on the main queue
-//            DispatchQueue.main.async {
-//                self.firstChoice = firstChoice
-//                self.secondChoice = secondChoice
-//                self.thirdChoice = thirdChoice
-//            }
-//        }
+        //set title
+        setTitle(name)
     }
     
     private func updateViews() {
@@ -62,3 +48,18 @@ class DetailInterfaceController: WKInterfaceController {
         thirdChoiceLabel.setText(thirdChoiceLabelText)
     }
 }
+
+
+
+// Might not need to add this
+//        //fetch the firstChoice, secondChoice, thirdChoice for that person
+//        fetcher.fetchOnePersonFromServer(identifier: person, context: CoreDataStack.shared.mainContext) {
+//
+//            //we set the firstChoice, secondChoice, and thirdChoice for that person
+//            //since updateviews is running in background thread we want to set these on the main queue so that when it gets to updateviews it sets it on the main queue
+//            DispatchQueue.main.async {
+//                self.firstChoice = firstChoice
+//                self.secondChoice = secondChoice
+//                self.thirdChoice = thirdChoice
+//            }
+//        }
