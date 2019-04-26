@@ -128,6 +128,8 @@ class WishDetailViewController: UIViewController {
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(WishDetailViewController.viewTapped(gestureRecognizer:)))
         
+        tapGesture.cancelsTouchesInView = false
+        
         view.addGestureRecognizer(tapGesture)
         
         birthdayTextField.inputView = datePicker
